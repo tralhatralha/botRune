@@ -15,8 +15,8 @@ let links = [
 ];
 
 (async () => {
-  // Lança o navegador
-  const browser = await puppeteer.launch({ headless: "shell" }); // 'headless: false' abre o navegador visivelmente
+
+  const browser = await puppeteer.launch({ headless: "shell" }); 
   const page = await browser.newPage();
   for(let i = 0; i < links.length; i++){
     
@@ -40,8 +40,3 @@ let links = [
   }
   await browser.close();
 })();
-
-
-
-// coins coins-pos
-// class="mw-page-title-main
