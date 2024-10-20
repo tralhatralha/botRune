@@ -36,7 +36,7 @@ let links = [
     return span ? span.textContent : 'Conteúdo não encontrado';
   });
 
-  console.log(`O disgraçado do ${nameBoss} ta dando ${goldHours} por hora!`)
+  console.log(`O disgraçado do \x1b[31m${nameBoss}\x1b[0m ta dando \x1b[32m${goldHours}\x1b[0m por hora!`)
   }
   await browser.close();
 })();
